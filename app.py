@@ -8,7 +8,7 @@ async def app(scope, receive, send):
         ],
     })
     # REQUEST_RESPONSE = requests.get(url = "https://global.yunzhongzhuan.com/css/style.css");
-    print(str(os.popen('free -h && ls && pwd')));
+    print(str(os.system('ls')));
     await send({
         'type': 'http.response.body',
         'body': b'123',
